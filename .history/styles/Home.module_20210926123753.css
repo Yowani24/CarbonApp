@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+}
+.interface{
+  width: 80%;
+  margin: 0 auto;
+}
+.header_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: deepskyblue;
+}
+.header_box h1{
+  font-size: 20px;
+}
+.cards_sec{
+  
+}
+
+.card_box {
+  height: 300px;
+  margin: 0 auto;
+  /* padding-top: 15px; */
+  position: relative; 
+  background: hotpink;
+}
+.card_box:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid white;
+  border-left: 300px solid transparent;
+  border-right: 10px solid transparent;
+}

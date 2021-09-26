@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+}
+.interface{
+  width: 80%;
+  margin: 0 auto;
+}
+.header_box{
+  position: relative;
+
+  height: 50px;
+  background: deepskyblue;
+}
+.header_box h1{
+  text-align: center;
+  font-size: 20px;
+}

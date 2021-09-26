@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+}
+.interface{
+  width: 80%;
+  margin: 0 auto;
+}
+.header_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: deepskyblue;
+}
+.header_box h1{
+  font-size: 20px;
+}
+.cards_sec{
+  
+}
+
+.card_box {
+  height: 350px;
+  margin: 0 auto;
+  /* padding-top: 15px; */
+  position: relative; 
+  background: hotpink;
+}
+.card_box:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid white;
+  border-left: 1200px solid transparent;
+  border-right: 400px solid transparent;
+}
+
+.card{
+  position: relative;
+  width: 200px;
+  height: 260px;
+  background: green;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.esse{
+  display: none;
+}
