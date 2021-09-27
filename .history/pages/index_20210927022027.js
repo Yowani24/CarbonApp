@@ -39,50 +39,10 @@ export default function Home() {
         <div className={styles.interface}>
 
             <div className={styles.card_box}>
-              <Splide
-                options={ {
-                  type: 'loop',
-                  gap: '1rem',
-                  perPage: 3,
-                  focus: 'center',
-                  pagination: false,
-      
-                  breakpoints: {
-                    420: {
-                      perPage: 1,
-                      arrows:false,
-                      gap: '1rem',
-                      padding: {
-                        right: '6rem',
-                      },
-                    },
-                    785: {
-                      arrows:false,
-                      pagination: true,
-                    }
-                    
-                  }
-                  
-                }}
-              >
+              <Splide>
                 {credit.map(ecocarbon => (
                   <SplideSlide>
-                    <div className={styles.card}>
-                      <div className={styles.topSide_card}>
-                        <p>More details</p>
-                        <span className={styles.arrowIcon_box}>
-                          <Image src={arrowIcon} alt=""/>
-                        </span>
-                      </div>
-                      <div className={styles.centerSide_card}>
-                        <p>$ {ecocarbon.price}</p>
-                        <p>{ecocarbon.product} - {ecocarbon.id}</p>
-                        <p>{ecocarbon.description}</p>
-                      </div>
-                      <div className={styles.card_add_btn_box}>
-                        <button>Add</button>
-                      </div>
-                    </div>
+                    {ecocarbon.price}
                   </SplideSlide>
                 ))}
               </Splide>

@@ -39,7 +39,8 @@ export default function Home() {
         <div className={styles.interface}>
 
             <div className={styles.card_box}>
-              <Splide
+              {credit.map(ecocarbon => (
+                <Splide
                 options={ {
                   type: 'loop',
                   gap: '1rem',
@@ -64,9 +65,8 @@ export default function Home() {
                   }
                   
                 }}
-              >
-                {credit.map(ecocarbon => (
-                  <SplideSlide>
+                 >
+                   <SplideSlide>
                     <div className={styles.card}>
                       <div className={styles.topSide_card}>
                         <p>More details</p>
@@ -75,18 +75,17 @@ export default function Home() {
                         </span>
                       </div>
                       <div className={styles.centerSide_card}>
-                        <p>$ {ecocarbon.price}</p>
-                        <p>{ecocarbon.product} - {ecocarbon.id}</p>
-                        <p>{ecocarbon.description}</p>
+                        <p>{ecocarbon.price}</p>
+                        <p>Carbon Credit - 1</p>
+                        <p>More details goes here like description</p>
                       </div>
                       <div className={styles.card_add_btn_box}>
                         <button>Add</button>
                       </div>
                     </div>
                   </SplideSlide>
-                ))}
-              </Splide>
-              
+                </Splide>
+              ))}
             </div>
 
           <div className={styles.bottom_text}>

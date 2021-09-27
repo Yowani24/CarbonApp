@@ -67,22 +67,7 @@ export default function Home() {
               >
                 {credit.map(ecocarbon => (
                   <SplideSlide>
-                    <div className={styles.card}>
-                      <div className={styles.topSide_card}>
-                        <p>More details</p>
-                        <span className={styles.arrowIcon_box}>
-                          <Image src={arrowIcon} alt=""/>
-                        </span>
-                      </div>
-                      <div className={styles.centerSide_card}>
-                        <p>$ {ecocarbon.price}</p>
-                        <p>{ecocarbon.product} - {ecocarbon.id}</p>
-                        <p>{ecocarbon.description}</p>
-                      </div>
-                      <div className={styles.card_add_btn_box}>
-                        <button>Add</button>
-                      </div>
-                    </div>
+                    
                   </SplideSlide>
                 ))}
               </Splide>
