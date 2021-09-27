@@ -17,7 +17,7 @@ import { useContext, useState } from 'react'
 export default function Home() {
   const {credits,cartContent, onAdd} = useContext(CreditList);
   const [credit, setCredit] = credits;
-  // const cartLength = cartContent;;
+  // const cartLength = cartContent;
   return (
     
     <div className={styles.container}>
