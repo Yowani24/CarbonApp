@@ -30,7 +30,7 @@ export default function Home() {
             <h1>Carb Cred - Towards a Sustainable Land</h1>
             <h1>Carb Cred</h1>
             <div className={styles.ImageBox}>
-              <Link href="/cart" passHref>
+              <Link href="/cart">
                 <span>
                   <Image src={cartIcon} alt=""/>
                   <p></p>
@@ -99,6 +99,8 @@ export default function Home() {
             <h1>Carbon Credits Purchase Flow</h1>
             <p>Yowani da Costa</p>
           </div>
+
+          <img src={cartIcon} alt=""/>
           
         </div>
       </section>
